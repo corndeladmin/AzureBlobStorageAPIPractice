@@ -7,6 +7,8 @@ jobs:
     upload:
         name: Image Upload Job
         runs-on: ubuntu-latest
+        env: 
+            SAS_TOKEN: ${{ secrets.SAS_TOKEN }}
         steps:
             - name: Checkout Code
               uses: actions/checkout@v2
