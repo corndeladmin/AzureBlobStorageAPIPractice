@@ -8,9 +8,9 @@ dotenv.load_dotenv(".env")
 
 container_name = "alextestcontainer"
 
-file_name = "tdd.png"
+file_name = "Docker.png"
 
-image_file = open("TDD.png", "rb")
+image_file = open("DockerDiagram.png", "rb")
 
 image_content = image_file.read()
 
