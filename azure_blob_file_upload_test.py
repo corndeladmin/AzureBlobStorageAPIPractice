@@ -16,7 +16,7 @@ image_content = image_file.read()
 
 contents = image_content
 
-sas_token = os.getenv("SASsas_TOKEN")
+sas_token = os.getenv("SAS_TOKEN")
 
 url = f"https://todotfstateacc.blob.core.windows.net/{container_name}/{file_name}?{sas_token}"
 
