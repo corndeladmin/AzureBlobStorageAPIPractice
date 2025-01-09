@@ -3,7 +3,7 @@ name: Image Upload
 
 on:
     schedule:
-      - cron: "* * * * *" 
+      - cron: "0 0 * * *" 
 
 jobs:
     upload:
