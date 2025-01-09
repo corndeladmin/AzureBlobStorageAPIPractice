@@ -1,0 +1,18 @@
+
+name: Image Upload
+
+on:
+    schedule:
+      - cron: "* * * * *" 
+
+jobs:
+    upload:
+        name: Image Upload Job
+        runs-on: ubuntu-latest
+        env: 
+            SAS_TOKEN: ${{ secrets.SAS_TOKEN }}
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v2
+            - run: pip install python-dotenv
+            - run: python3 azure_blob_file_upload_nasa.py
